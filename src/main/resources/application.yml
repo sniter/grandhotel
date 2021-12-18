@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:grandhotel;DB_CLOSE_DELAY=-1
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    username: grandhotel
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+      format_sql: true
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+com:
+  grandhotel:
+    api:
+      pageSize: 10
